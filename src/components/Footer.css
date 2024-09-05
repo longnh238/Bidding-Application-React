@@ -1,0 +1,53 @@
+/* Footer Styles */
+footer {
+  background-color: #011409;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.footer-overlay {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 1rem;
+  flex: 1; /* Default flex value */
+}
+
+.footer-section.about {
+  flex: 2; /* Takes 2/3 of the space */
+}
+
+.footer-section.contact {
+  flex: 1; /* Takes 1/3 of the space */
+  text-align: right;
+}
+
+.footer-section h2 {
+  font-size: 1.2rem; /* Smaller font size */
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-section p {
+  font-size: 0.875rem; /* Smaller font size */
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #555;
+  font-size: 0.875rem; /* Smaller font size */
+}
+
+.footer-bottom p {
+  margin: 0;
+}

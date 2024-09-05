@@ -1,0 +1,105 @@
+/* Styling for the toggle link */
+.toggle-bids-link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: #218838;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+  font-size: 0.875rem; /* Smaller font size */
+}
+
+.toggle-bids-link:hover {
+  color: #1e7e34;
+}
+
+.toggle-bids-link.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+/* Styling for the highest bids */
+.highest-bids ul {
+  list-style: none;
+  padding: 0;
+}
+
+.highest-bids li {
+  background-color: #f4f4f4;
+  padding: 0.5rem; /* Smaller padding */
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-size: 0.875rem; /* Smaller font size */
+}
+
+.highest-bids li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.highest-bids li:first-child {
+  background-color: #218838;
+  color: #fff;
+  font-size: 0.875rem; /* Smaller font size */
+  font-weight: bold;
+  padding-top: 0.75rem; /* Smaller padding */
+  padding-bottom: 0.75rem; /* Smaller padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Highest Bids Section Styles */
+.highest-bids {
+  width: 100%;
+  border-left: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .highest-bids {
+    width: 20%;
+    border-left: 3px solid #218838;
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
+    margin-left: 1.5rem;
+    margin-top: 0;
+  }
+}
+
+/* Styling for the headers */
+.bids-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.bids-header h3 {
+  font-size: 1rem; /* Smaller font size */
+  font-weight: bold;
+  color: #218838;
+  margin: 0.5rem 0;
+  position: relative;
+}
+
+.bids-header h3::after {
+  content: "";
+  display: block;
+  width: 50px; /* Adjusted width */
+  height: 2px; /* Adjusted height */
+  background-color: #218838;
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+.bids-header h4 {
+  font-size: 0.875rem; /* Smaller font size */
+  font-weight: bold;
+  color: #333;
+  margin: 0.5rem 0;
+  position: relative;
+}

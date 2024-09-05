@@ -1,0 +1,115 @@
+/* Reset and Base Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 80%;
+  margin: 0 auto;
+  /* padding: 2rem; */
+}
+
+@media (max-width: 1536px) {
+  main {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* custom-modal.css */
+.modal-dialog {
+  max-width: 40%; /* Increase the maximum width of the modal */
+  margin: 1.75rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  overflow: hidden;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #218838;
+}
+
+.modal-body {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.modal-footer {
+  border-top: none;
+  padding-top: 0;
+  justify-content: center;
+}
+
+.btn-secondary {
+  background-color: #218838;
+  border-color: #218838;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background-color: #1e7e34;
+  border-color: #1e7e34;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .item img {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .highest-bids {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 1rem 0;
+  }
+}

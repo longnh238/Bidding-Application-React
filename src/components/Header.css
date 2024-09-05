@@ -1,0 +1,91 @@
+/* Header Styles */
+header {
+  background-image: url("https://t3.ftcdn.net/jpg/06/57/60/36/360_F_657603660_9T1QY09508pJdj3KVsmBBkOTO6Ysap6U.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #f4f4f4;
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem; /* Added margin at the bottom */
+  min-height: 240px; /* Set a minimum height */
+  height: auto; /* Remove fixed height */
+}
+
+.header-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-content {
+  max-width: 800px;
+  padding: 1.5rem;
+}
+
+.header-content h1 {
+  font-size: 1.8rem; /* Smaller font size */
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold; /* Make text bold */
+  color: #ffffff;
+}
+
+.header-content p {
+  font-size: 1.2rem; /* Smaller font size */
+  margin-bottom: 1.5rem;
+}
+
+.total-bids {
+  font-size: 1.1rem; /* Smaller font size */
+  margin-top: 0.5rem;
+}
+
+.total-bids span {
+  font-weight: bold;
+  font-size: 1.4rem; /* Smaller font size */
+}
+
+/* Navbar Styles */
+.navbar {
+  margin-top: 1.5rem; /* Space above navbar */
+  /* background-color: #f4f4f4 !important; */
+  backdrop-filter: blur(10px); /* Add blur effect for a modern look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for a more pronounced effect */
+  border-radius: 8px;
+  /* border-top-left-radius: 8px; Rounded top-left corner */
+  /* border-top-right-radius: 8px; Rounded top-right corner */
+  padding: 0.5rem 1rem; /* Padding around the navbar */
+  border: 2px solid #ffffff;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 1rem; /* Space out the nav items */
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff; /* Dark color for nav links */
+  font-size: 0.9rem; /* Smaller font size */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color and background change */
+  padding: 0.5rem 1rem; /* Padding around links */
+  border-radius: 4px; /* Rounded corners for links */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #fff;
+  background-color: #218838;
+  text-decoration: none;
+}

@@ -1,0 +1,63 @@
+/* Items Section Styles */
+.items {
+  /* background-color: #fff; */
+  border-radius: 8px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  padding: 1.5rem;
+}
+
+.items h2 {
+  text-align: center;
+  font-size: 2rem; /* Smaller font size */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #218838;
+}
+
+.items h6 {
+  font-size: 1rem; /* Adjusted font size */
+  font-weight: 400; /* Semi-bold weight for emphasis */
+  margin-bottom: 0.5rem; /* Space between h6 elements */
+  color: #333; /* Text color for readability */
+  background-color: #f4f4f4; /* Light green background for distinction */
+  border-left: 4px solid #218838; /* Green left border for emphasis */
+  padding: 0.5rem 1rem; /* Padding inside h6 */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.search-box {
+  margin-left: 20px;
+  margin-bottom: 1.5rem;
+  width: 25rem;
+  /* padding: 10px 15px; */
+  padding: 10px 40px 10px 15px; /* Adjust padding to leave space on the right for the icon */
+  font-size: 16px;
+  border: 2px solid #f8f8f8; /* Blue border for prominence */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%236c757d" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85a1.007 1.007 0 0 0-.115-.098zm-5.442 1.29a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/></svg>')
+    no-repeat right 15px center; /* Align the search icon to the right */
+  background-size: 16px 16px; /* Adjust the size of the icon */
+}
+
+.search-box:focus {
+  border-color: #218838; /* Darker border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Slightly more intense shadow */
+}
+
+.search-box::placeholder {
+  color: #6c757d; /* Light gray placeholder text */
+  opacity: 1; /* Ensure full opacity for better readability */
+}
+
+.search-box:hover {
+  border-color: #218838; /* Darker border color on hover */
+}
